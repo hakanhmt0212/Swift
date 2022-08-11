@@ -16,6 +16,7 @@
 		D3DDAF72251A9B8500BDC5A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3DDAF70251A9B8500BDC5A5 /* LaunchScreen.storyboard */; };
 		D3DDAF7D251A9FD600BDC5A5 /* StoryPromptEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DDAF7B251A9FD600BDC5A5 /* StoryPromptEntry.swift */; };
 		D3DDAF7E251A9FD600BDC5A5 /* StoryPrompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DDAF7C251A9FD600BDC5A5 /* StoryPrompts.swift */; };
+		E3AB0F4F28A4E77C00F31B2F /* StoryPromptTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB0F4E28A4E77C00F31B2F /* StoryPromptTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D3DDAF73251A9B8500BDC5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3DDAF7B251A9FD600BDC5A5 /* StoryPromptEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryPromptEntry.swift; sourceTree = "<group>"; };
 		D3DDAF7C251A9FD600BDC5A5 /* StoryPrompts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryPrompts.swift; sourceTree = "<group>"; };
+		E3AB0F4E28A4E77C00F31B2F /* StoryPromptTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPromptTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		D3CD66A6251BF6CF00759BEF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E3AB0F4E28A4E77C00F31B2F /* StoryPromptTableViewController.swift */,
 				D3DDAF69251A9B8400BDC5A5 /* AddStoryPromptViewController.swift */,
 				D3CD66A3251BF6C200759BEF /* StoryPromptViewController.swift */,
 			);
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3AB0F4F28A4E77C00F31B2F /* StoryPromptTableViewController.swift in Sources */,
 				D3CD66A4251BF6C200759BEF /* StoryPromptViewController.swift in Sources */,
 				D3DDAF7E251A9FD600BDC5A5 /* StoryPrompts.swift in Sources */,
 				D3DDAF6A251A9B8400BDC5A5 /* AddStoryPromptViewController.swift in Sources */,
