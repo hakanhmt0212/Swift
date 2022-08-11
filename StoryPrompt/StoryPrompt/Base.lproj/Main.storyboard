@@ -41,7 +41,13 @@
                             <outlet property="delegate" destination="VyN-MI-zIJ" id="Bfi-oi-psZ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="6DP-vE-Bxl"/>
+                    <navigationItem key="navigationItem" id="6DP-vE-Bxl">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="bim-v3-GYC">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="55H-H4-YjV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="tPf-sF-98V" kind="show" identifier="ShowStoryPrompt" id="nxt-Jg-hbf"/>
                     </connections>
@@ -75,7 +81,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="wRP-9M-sOW">
-                                <rect key="frame" x="20" y="101" width="374" height="652.5"/>
+                                <rect key="frame" x="20" y="145" width="374" height="652.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="42o-Rg-StJ">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -210,7 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-249" y="-325"/>
+            <point key="canvasLocation" x="-135" y="-319"/>
         </scene>
         <!--Story Prompt View Controller-->
         <scene sceneID="HgP-jV-CJQ">
@@ -252,11 +258,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fW-qn-6nf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="639" y="31"/>
+            <point key="canvasLocation" x="636" y="31"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="nxt-Jg-hbf"/>
+        <segue reference="DWK-CK-Zge"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="10.circle" catalog="system" width="128" height="121"/>
