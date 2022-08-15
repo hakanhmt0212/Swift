@@ -71,7 +71,8 @@ class ViewController: UIViewController {
 
         score += points
 
-        let message = "You scored \(points) points" +
+        let message = "You picked \(currentValue)" +
+                    "\nYou scored \(points) points" +
                     "\nThe target value is: \(targetValue)" +
                     "\nThe difference is: \(difference)"
 
