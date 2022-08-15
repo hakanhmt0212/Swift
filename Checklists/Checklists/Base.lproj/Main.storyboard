@@ -7,6 +7,38 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Add Item-->
+        <scene sceneID="1Wp-GP-ySq">
+            <objects>
+                <tableViewController id="Q9h-p5-djc" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ygr-ka-Kkh">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="GvX-C3-hbX">
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GvX-C3-hbX" id="zMm-z0-FBn">
+                                    <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Q9h-p5-djc" id="g9z-Ed-beh"/>
+                            <outlet property="delegate" destination="Q9h-p5-djc" id="wTC-e4-l9i"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add Item" id="QI8-r6-WHd">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="ihY-SO-3qA"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="sR8-E0-qav"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9QV-kp-N4S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1762" y="128"/>
+        </scene>
         <!--Checklist-->
         <scene sceneID="eXS-U6-OCY">
             <objects>
@@ -42,7 +74,7 @@
                     <navigationItem key="navigationItem" title="Checklist" id="QHn-sT-Cmp">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="XEM-MH-7q4">
                             <connections>
-                                <action selector="addItem" destination="sob-3z-BZs" id="Yyi-a3-DKf"/>
+                                <segue destination="Q9h-p5-djc" kind="show" id="SxA-nT-G7k"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
